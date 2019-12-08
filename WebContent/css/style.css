@@ -1,0 +1,51 @@
+html, body{
+	height: 100%;
+	margin: 0;	/* spazio tra bordo della pagina e bordo del div */
+	padding: 0; /* spazio tra contenuto e bordo del div */
+	background-color: white;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 16px;
+	color: black;
+}
+
+
+.container{ /* . per richiamare la classe */
+	min-height: 100%;
+	height: auto !important; /* la formattazione interna manterrà questa proprietà a discapito della specifica formattazione dell'elemento */
+	margin: 0 auto -250px;
+}
+
+::-webkit-scrollbar{ /* richiama la scrollbar laterale */
+	display: none; /* la si visualizza solo se serve */
+}
+
+footer nav{
+	float: left;
+	padding: 30px;
+}
+
+footer section{
+	float: left;
+	padding: 30px;
+}
+
+#footer{
+	background-color: black;
+	color: white;
+	margin-bottom: 0;
+}
+
+.footer, #push{ /* con push è generalmente chiamato l'elemento che spinge in basso il footer */
+	margin: 20px;
+	height: 250px;
+	clear: both; /* pulisce la formattazione del float precedente */
+}
+
+p.copyright{
+	clear: left;
+	margin-left: 30px;
+	padding-bottom: 30px;
+}
